@@ -405,7 +405,7 @@ nav .fly-item {
     display: flex;
 }
 
-.dpt-menu.has-child li a:hover {
+.dpt-menu .has-child li a:hover {
     text-decoration: underline;
 }
 
@@ -576,7 +576,10 @@ form.search button:hover {
     .dpt-menu>ul>li>a {
         font-weight: var(--fw5);
         padding: 0 1.5em;
-        border-bottom: solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+    .dpt-menu .mega {
+        display: block;
     }
     .dpt-menu .has-child>ul,
     .dpt-menu .mega {
@@ -601,13 +604,13 @@ form.search button:hover {
         min-width: var(--percent100);
         display: flex;
     }
-    .dpt-menu .has-child:hover .mega .dpt-menu .has-child:nth-child(1)>ul {
+    .dpt-menu .has-child:nth-child(2)>.mega {
         display: block;
     }
     .dpt-menu .beauty ul {
         background-image: url(menu/menu_bg1.jpg);
     }
-    .dpt-menu .electric ul {
+    .dpt-menu .electronic ul {
         background-image: url(menu/menu_bg2.jpg);
     }
     .dpt-menu .fashion ul {
@@ -624,7 +627,7 @@ form.search button:hover {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(90deg, rgba(225, 225, 225, 1) 0%, rgba(225, 225, 225, 25) 0%);
+        background-color: line;
     }
     .dpt-menu .mega {
         width: auto;
