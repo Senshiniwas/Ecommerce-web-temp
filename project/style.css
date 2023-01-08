@@ -458,18 +458,6 @@ form.search button:hover {
     background-color: var(--dark-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 992px) {
     .container {
         padding: 0 2em;
@@ -598,26 +586,33 @@ form.search button:hover {
         background-position: right bottom;
         background-repeat: no-repeat;
         background-size: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
     .dpt-menu .mega {
         width: auto;
         min-width: var(--percent100);
-        display: flex;
+        display: none;
     }
     .dpt-menu .has-child:nth-child(2)>.mega {
         display: block;
     }
     .dpt-menu .beauty ul {
         background-image: url(menu/menu_bg1.jpg);
+        flex-direction: column;
     }
     .dpt-menu .electronic ul {
         background-image: url(menu/menu_bg2.jpg);
+        flex-direction: column;
     }
     .dpt-menu .fashion ul {
         background-image: url(menu/menu_bg3.jpg);
+        flex-direction: column;
     }
     .dpt-menu .homekit .mega {
         background-image: url(menu/menu_bg4.jpg);
+    }
+    .dpt-menu .homekit .mega ul {
+        flex-direction: column;
     }
     .dpt-menu .has-child> :where(ul,
     .mega)::before {
@@ -627,107 +622,76 @@ form.search button:hover {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: line;
-    }
-    .dpt-menu .mega {
-        width: auto;
-        min-width: var(--percent100);
-        display: flex;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
-
     /*slider */
-    .slider > div > .wrapper {
-      width:calc(100% - (300px + 2em));
-      margin-left: auto;
+    .slider>div>.wrapper {
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ----------------------------------------------------------------
 * 02.SLIDER --
  * ----------------------------------------------------------------
 */
+
+
 /* ----------------------------------------------------------------*/
 
-
 .slider .item {
-  position: relative ;
-  height:  474px;
+    position: relative;
+    height: 474px;
 }
-.slider .text-content{
-  content: '';
-  position: absolute;
-  top:30%;
-  left:0;
-  width: 450px;
-  height:300px;
-  background-color: var(--white-color);
-  z-index: 1;
-  filter: blur(50px);
-  opacity: .8;
-}
+
 .slider .text-content {
-  position: relative;
-  height: var(--percent100);
-  justify-content: flex-end;
-  padding: 0 0 10% 10% ;
-  z-index: 1;
-}
-.slider h4 { 
-  font-size: var(--font-small);
-  font-weight: var(--fw7);
-  width: fit-content;
-  padding: 4px 10px ;
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  border-radius : 4px ; 
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: .8;
 }
 
-.text-content :where(h2,h3) span:first-child {
-  font-weight: var(--fw3);
-  columns: var(--light-text-color);
+.slider .text-content {
+    position: relative;
+    height: var(--percent100);
+    justify-content: flex-end;
+    padding: 0 0 10% 10%;
+    z-index: 1;
 }
-.text-content :where(h2,h4) span:last-child {
-  color: var(--secondary-dark-color);
-  text-transform: uppercase;
-  letter-spacing: -1px;
+
+.slider h4 {
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    width: fit-content;
+    padding: 4px 10px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 4px;
 }
+
+.text-content :where(h2,
+h3) span:first-child {
+    font-weight: var(--fw3);
+    columns: var(--light-text-color);
+}
+
+.text-content :where(h2,
+h4) span:last-child {
+    color: var(--secondary-dark-color);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color:var(--secondary-dark-color);
+    background-color: var(--secondary-dark-color);
 }
-
-
-
-
-
-
-
-
-
-
-
