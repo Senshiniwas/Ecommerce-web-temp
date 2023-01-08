@@ -237,6 +237,26 @@ h4 {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************************/
 
 header li>a {
@@ -245,6 +265,17 @@ header li>a {
     line-height: inherit;
     transition: var(--trans-color);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*********************************/
@@ -285,6 +316,23 @@ header li>a {
 .header-top li:hover ul {
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*************************************************************************************************/
@@ -410,6 +458,24 @@ nav .fly-item {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*departments menu*/
 
 .header-main .right {
@@ -470,6 +536,14 @@ form.search button:hover {
 
 
 
+
+
+
+
+
+
+
+
 @media screen and (min-width: 992px) {
     .container {
         padding: 0 2em;
@@ -491,6 +565,15 @@ form.search button:hover {
     .header-nav .right li>a {
         margin-left: 1em;
     }
+
+
+
+
+
+
+
+
+
     /* mega menu */
     nav .mega {
         position: absolute;
@@ -637,6 +720,22 @@ form.search button:hover {
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*slider */
     .slider > div > .wrapper {
