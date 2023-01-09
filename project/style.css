@@ -715,16 +715,6 @@ form.search button:hover {
         width: calc(100% - (300px + 2em));
         margin-left: auto;
     }
-
-
-
-    /*footer */
-    .newsletter .box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-       
-    }
 }
 
 
@@ -988,6 +978,7 @@ h4) span:last-child {
 /* ----------------------------------------------------------------
 * 04.Product--
 *a global product
+* 03.Brands --
  * ----------------------------------------------------------------
 */
 
@@ -1000,4 +991,16 @@ h4) span:last-child {
 
 .products.big .media {
     max-height: 373px;
+}
+.brands .wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0 ;
+}
+.brands .item img {
+    opacity: .25;
+    transition:  opacity .3s;
+}
+.brands .item a:hover img {
+    opacity: 1;
 }
