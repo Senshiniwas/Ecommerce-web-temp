@@ -715,6 +715,12 @@ form.search button:hover {
         width: calc(100% - (300px + 2em));
         margin-left: auto;
     }
+     /*footer */
+     .newsletter .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 
@@ -906,6 +912,61 @@ h4) span:last-child {
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--secondary-dark-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+* Footer --
+ * ----------------------------------------------------------------
+*/
+
+
+
+/* Footer ------------------------------------------------------------------
+* a.News Letter
+ * ----------------------------------------------------------------
+*/
+.newsletter {
+    padding: 2.5em 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.newsletter h3 {
+    font-size: 1.5em;
+}
+.newsletter p {
+    font-weight: var(--fw3);
+    color: var(--border-color);
+    margin:0.5em 0 1.5em;
+}
+.newsletter p strong {
+    color:var(--primary-color);
+}
+.newsletter form {
+    max-width: 500px;
+    width: var(--percent100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------------------------------------------------
