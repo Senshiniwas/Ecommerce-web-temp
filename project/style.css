@@ -186,11 +186,9 @@ h4 {
     overflow: hidden;
 }
 
-.primary-button,
-.secondary-button,
-.light-button {
+.primary-button, .secondary-button, .light-button {
     font-size: var(--font-small);
-    padding: 0. gem 2em;
+    padding: 0.9em 2em;
     height: auto;
     width: fit-content;
     border-radius: 2em;
@@ -645,7 +643,7 @@ form.search button:hover {
         border-bottom: 0;
     }
     .dpt-menu>ul>li>a {
-        font-weight: var(--fw5);
+        font-weight: var(--fw8);
         padding: 0 1.5em;
         border-bottom: 1px solid var(--border-color);
     }
@@ -706,6 +704,7 @@ form.search button:hover {
         left: 0;
         right: 0;
         bottom: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     }
     .dpt-menu .has-child:hover .mega {
         display: flex;
@@ -860,8 +859,9 @@ li:nth-child(5))>a {
     height: 474px;
 }
 
-.slider .text-content {
-    content: '';
+
+.slider .text-content::before {
+    content:'';
     position: absolute;
     top: 30%;
     left: 0;
@@ -870,7 +870,7 @@ li:nth-child(5))>a {
     background-color: var(--white-color);
     z-index: 1;
     filter: blur(50px);
-    opacity: .8;
+    opacity: .2;
 }
 
 .slider .text-content {
@@ -891,19 +891,39 @@ li:nth-child(5))>a {
     border-radius: 4px;
 }
 
-.text-content :where(h2,
-h3) span:first-child {
+.text-content :where(h2,h3) span:first-child {
     font-weight: var(--fw3);
     columns: var(--light-text-color);
 }
 
 .text-content :where(h2,
 h4) span:last-child {
-    color: var(--secondary-dark-color);
+    color: var(--dark-color);
     text-transform: uppercase;
     letter-spacing: -1px;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--secondary-dark-color);
+}
+
+
+/* ----------------------------------------------------------------
+* 03.Brands --
+ * ----------------------------------------------------------------
+*/
+
+
+
+.brands .wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0 ;
+}
+.brands .item img {
+    opacity: .25;
+    transition:  opacity .3s;
+}
+.brands .item a:hover img {
+    opacity: 1;
 }
